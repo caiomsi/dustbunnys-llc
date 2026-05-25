@@ -4,35 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dustbunny's LLC – Professional House Cleaning | Gainesville, FL</title>
-  <meta name="description" content="Dustbunny's LLC offers professional, reliable house cleaning services in Gainesville, FL. Regular cleaning, deep cleans, move-in/out, and more. Call (352) 872-6459." />
-  <meta name="keywords" content="house cleaning Gainesville FL, maid service Gainesville, deep cleaning, move out cleaning, Dustbunny's LLC" />
-
-  <!-- Open Graph -->
+  <meta name="description" content="Dustbunny's LLC offers professional house cleaning in Gainesville, FL. Regular cleaning, deep cleans, move-in/out, and more. Call (352) 872-6459." />
   <meta property="og:title"       content="Dustbunny's LLC – Professional House Cleaning" />
-  <meta property="og:description" content="Reliable, thorough home cleaning services in Gainesville, FL. Call (352) 872-6459 to book." />
+  <meta property="og:description" content="Reliable, thorough home cleaning in Gainesville, FL. Call (352) 872-6459." />
   <meta property="og:type"        content="website" />
 
-  <!-- Fonts -->
+  <!-- Fonts: Cormorant Garamond (display) + DM Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- Favicon placeholder SVG -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧹</text></svg>" />
 </head>
 <body>
 
   <!-- ── Navigation ── -->
-  <nav id="navbar">
+  <nav id="navbar" role="navigation" aria-label="Main">
     <div class="container nav-inner">
-      <a href="#hero" class="nav-logo" aria-label="Dustbunny's LLC home">
-        <div class="logo-icon" aria-hidden="true">🧹</div>
-        Dustbunny's<span>&nbsp;LLC</span>
+      <a href="#hero" class="nav-logo" aria-label="Dustbunny's LLC — home">
+        <div class="logo-mark" aria-hidden="true">🧹</div>
+        Dustbunny's LLC
       </a>
 
-      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
@@ -41,58 +36,65 @@
         <li><a href="#why">Why Us</a></li>
         <li><a href="#contact">Contact</a></li>
         <li class="nav-cta">
-          <a href="tel:+13528726459" class="btn btn-primary">📞 Call to Book</a>
+          <a href="tel:+13528726459" class="btn btn-terra">Call to Book</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- ── Hero ── -->
-  <section id="hero" aria-label="Welcome">
-    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
-    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+  <section id="hero" aria-label="Welcome to Dustbunny's LLC">
     <div class="container">
       <div class="hero-inner">
 
         <div class="hero-text">
-          <div class="hero-badge">✨ Serving Gainesville, FL</div>
-          <h1>A Cleaner Home,<br><em>Every Time.</em></h1>
-          <p>
-            Dustbunny's LLC brings professional, detail-focused cleaning
-            to homes across Gainesville. Reliable. Thorough. Trusted.
-          </p>
+          <span class="label-tag">✦ Serving Gainesville, FL</span>
+          <h1>A cleaner home,<br><em>every time.</em></h1>
+          <p>Dustbunny's LLC brings professional, detail-focused cleaning to homes across Gainesville. Reliable, thorough, and always on time.</p>
           <div class="hero-actions">
-            <a href="tel:+13528726459" class="btn btn-primary">📞 (352) 872-6459</a>
-            <a href="#services" class="btn btn-outline">Our Services</a>
+            <a href="tel:+13528726459" class="btn btn-terra">📞 (352) 872-6459</a>
+            <a href="#services" class="btn btn-ghost">Our Services</a>
           </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
+          <div class="hero-proof">
+            <div class="proof-item">
               <div class="num">Mon–Fri</div>
-              <div class="label">8 AM – 5 PM</div>
+              <div class="desc">8 AM – 5 PM</div>
             </div>
-            <div class="hero-stat">
+            <div class="proof-item">
               <div class="num">Sat</div>
-              <div class="label">9 AM – 5 PM</div>
+              <div class="desc">9 AM – 5 PM</div>
             </div>
-            <div class="hero-stat">
+            <div class="proof-item">
               <div class="num">Local</div>
-              <div class="label">Gainesville, FL</div>
+              <div class="desc">Gainesville</div>
             </div>
           </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="hero-card-stack">
-            <div class="hero-main-card">
-              <div class="icon-big">🏠</div>
-              <h3>Professional Cleaning</h3>
-              <p>Top-to-bottom home cleaning tailored to your schedule and needs.</p>
+          <div class="arch-wrap">
+            <div class="arch-ring arch-ring-1"></div>
+            <div class="arch-ring arch-ring-2"></div>
+
+            <div class="arch">
+              <div class="arch-icon">🏠</div>
+              <p class="arch-tagline">Your home,<br>cared for.</p>
             </div>
-            <div class="hero-float-card card-rating">
-              ⭐⭐⭐⭐⭐ &nbsp;5-Star Rated
+
+            <div class="arch-badge badge-top">
+              <span class="dot"></span>
+              <div>
+                <strong>Locally Owned</strong>
+                Gainesville, FL
+              </div>
             </div>
-            <div class="hero-float-card card-local">
-              <span class="dot"></span> Locally Owned &amp; Operated
+
+            <div class="arch-badge badge-bottom">
+              ⭐⭐⭐⭐⭐
+              <div>
+                <strong>5-Star Rated</strong>
+                Trusted by locals
+              </div>
             </div>
           </div>
         </div>
@@ -104,49 +106,48 @@
   <!-- ── Services ── -->
   <section id="services" aria-labelledby="services-heading">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">What We Offer</span>
-        <h2 id="services-heading">Our Cleaning Services</h2>
-        <p>From routine upkeep to top-to-bottom deep cleans, we handle it all so you don't have to.</p>
+      <div class="section-intro reveal">
+        <span class="label-tag">What We Offer</span>
+        <h2 id="services-heading">Our Services</h2>
+        <p>From weekly maintenance to intensive deep cleans — we take care of every corner so you can focus on what matters.</p>
       </div>
 
-      <div class="services-grid">
+      <div class="services-list" role="list">
 
-        <article class="service-card reveal">
-          <div class="service-icon" style="background:#e8f7f5;">🧽</div>
-          <h3>Regular Cleaning</h3>
-          <p>Weekly, bi-weekly, or monthly recurring service to keep your home consistently fresh and tidy.</p>
-        </article>
+        <div class="service-row reveal" role="listitem">
+          <div class="svc-num">01</div>
+          <div class="svc-name">Regular Cleaning</div>
+          <p class="svc-desc">Weekly, bi-weekly, or monthly recurring service to keep your home consistently fresh and tidy year-round.</p>
+          <span class="svc-icon">🧁</span>
+        </div>
 
-        <article class="service-card reveal">
-          <div class="service-icon" style="background:#fff0e8;">🔬</div>
-          <h3>Deep Cleaning</h3>
-          <p>A thorough, intensive clean covering every corner — baseboards, appliances, grout, and more.</p>
-        </article>
+        <div class="service-row reveal reveal-delay-1" role="listitem">
+          <div class="svc-num">02</div>
+          <div class="svc-name">Deep Cleaning</div>
+          <p class="svc-desc">A thorough, intensive clean covering every corner — baseboards, appliances, grout, and all the hard-to-reach spots.</p>
+          <span class="svc-icon">🔬</span>
+        </div>
 
-        <article class="service-card reveal">
-          <div class="service-icon" style="background:#eef6ff;">📦</div>
-          <h3>Move-In / Move-Out</h3>
-          <p>Leave your old place spotless or start fresh in your new home. Perfect for tenants and landlords.</p>
-        </article>
+        <div class="service-row reveal reveal-delay-2" role="listitem">
+          <div class="svc-num">03</div>
+          <div class="svc-name">Move-In / Move-Out</div>
+          <p class="svc-desc">Leave your old place spotless or start fresh in your new home. Ideal for tenants, homeowners, and landlords alike.</p>
+          <span class="svc-icon">📦</span>
+        </div>
 
-        <article class="service-card reveal">
-          <div class="service-icon" style="background:#f0fff4;">🪴</div>
-          <h3>Kitchen &amp; Bathrooms</h3>
-          <p>Special attention to the rooms that matter most — sanitized, degreased, and sparkling clean.</p>
-        </article>
+        <div class="service-row reveal reveal-delay-3" role="listitem">
+          <div class="svc-num">04</div>
+          <div class="svc-name">Kitchen &amp; Bathrooms</div>
+          <p class="svc-desc">Focused attention on the rooms that matter most — sanitized surfaces, degreased appliances, and sparkling fixtures.</p>
+          <span class="svc-icon">🪣</span>
+        </div>
 
-        <article class="service-card reveal">
-          <div class="service-icon" style="background:#fdf0ff;">🛏️</div>
-          <h3>Bedrooms &amp; Living Areas</h3>
-          <p>Dusting, vacuuming, mopping, and surface wiping throughout all rooms in your home.</p>
-        </article>
-
-        <article class="service-card reveal">
-          <div class="service-icon" style="background:#fffbe8;">✅</div>
-          <h3>Custom Requests</h3>
-          <p>Have something specific in mind? We're flexible. Just let us know what your home needs.</p>
-        </article>
+        <div class="service-row reveal reveal-delay-4" role="listitem">
+          <div class="svc-num">05</div>
+          <div class="svc-name">Custom Requests</div>
+          <p class="svc-desc">Have something specific in mind? We're flexible and happy to tailor a cleaning plan that fits your exact needs.</p>
+          <span class="svc-icon">✅</span>
+        </div>
 
       </div>
     </div>
@@ -155,154 +156,141 @@
   <!-- ── Why Us ── -->
   <section id="why" aria-labelledby="why-heading">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Why Choose Us</span>
-        <h2 id="why-heading">The Dustbunny's Difference</h2>
-        <p>We treat every home like it's our own — with care, respect, and an eye for detail.</p>
-      </div>
+      <div class="why-inner">
 
-      <div class="why-grid">
-
-        <div class="why-item reveal">
-          <div class="why-icon">🏡</div>
-          <h3>Locally Owned</h3>
-          <p>A proud Gainesville business — your money stays in the community.</p>
+        <div class="why-left reveal">
+          <span class="label-tag light">Why Choose Us</span>
+          <h2 id="why-heading">The Dustbunny's<br><em>difference.</em></h2>
+          <p>We treat every home like it's our own — with care, respect, and an eye for detail that sets us apart.</p>
+          <div class="why-cta">
+            <a href="tel:+13528726459" class="btn btn-terra">📞 Call to Book</a>
+          </div>
         </div>
 
-        <div class="why-item reveal">
-          <div class="why-icon">🔒</div>
-          <h3>Trustworthy &amp; Reliable</h3>
-          <p>Background-checked professionals you can trust in your home.</p>
-        </div>
-
-        <div class="why-item reveal">
-          <div class="why-icon">⏰</div>
-          <h3>On Time, Every Time</h3>
-          <p>We respect your schedule — punctual arrival and efficient service.</p>
-        </div>
-
-        <div class="why-item reveal">
-          <div class="why-icon">✨</div>
-          <h3>Attention to Detail</h3>
-          <p>No corner is missed. We clean to the standard we'd want for ourselves.</p>
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-card-icon">🏡</div>
+            <h3>Locally Owned</h3>
+            <p>A proud Gainesville business — your money stays right here in the community.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-card-icon">🔒</div>
+            <h3>Trustworthy</h3>
+            <p>Reliable professionals you can trust in your home, every single visit.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-card-icon">⏰</div>
+            <h3>On Time</h3>
+            <p>We respect your schedule — punctual arrival and efficient, thorough service.</p>
+          </div>
+          <div class="why-card reveal reveal-delay-3">
+            <div class="why-card-icon">✨</div>
+            <h3>Detail-Focused</h3>
+            <p>No corner is missed. We clean to the standard we'd set for ourselves.</p>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ── CTA Banner ── -->
-  <section id="cta-banner" aria-label="Book now">
-    <div class="container">
-      <h2>Ready for a Cleaner Home?</h2>
-      <p>Give us a call or send a message — we'll find a time that works for you.</p>
-      <a href="tel:+13528726459" class="btn btn-white btn">📞 Call (352) 872-6459</a>
+  <!-- ── CTA Strip ── -->
+  <section id="cta-strip" aria-label="Book a cleaning">
+    <div class="container cta-strip-inner">
+      <h2>Ready for a cleaner home?</h2>
+      <p>Give us a call — we'll find a time that works for you.</p>
+      <a href="tel:+13528726459" class="btn btn-white">📞 (352) 872-6459</a>
     </div>
   </section>
 
   <!-- ── Hours & Contact ── -->
   <section id="contact" aria-labelledby="contact-heading">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Find Us</span>
+      <div class="section-intro centered reveal">
+        <span class="label-tag">Find Us</span>
         <h2 id="contact-heading">Hours &amp; Contact</h2>
-        <p>We're available six days a week. Reach out to schedule your cleaning today.</p>
+        <p>We're available six days a week. Reach out anytime to schedule your cleaning.</p>
       </div>
 
-      <div class="contact-grid">
+      <div class="contact-inner">
 
-        <!-- Left: Hours + contact info -->
-        <div>
-          <h3 style="color:var(--navy);margin-bottom:1.25rem;">Business Hours</h3>
-          <table class="hours-table" aria-label="Business hours">
-            <tbody>
-              <tr id="row-sunday">
-                <td>Sunday</td>
-                <td class="closed-text">Closed</td>
-              </tr>
-              <tr id="row-monday">
-                <td>Monday</td>
-                <td>8:00 AM – 5:00 PM</td>
-              </tr>
-              <tr id="row-tuesday">
-                <td>Tuesday</td>
-                <td>8:00 AM – 5:00 PM</td>
-              </tr>
-              <tr id="row-wednesday">
-                <td>Wednesday</td>
-                <td>8:00 AM – 5:00 PM</td>
-              </tr>
-              <tr id="row-thursday">
-                <td>Thursday</td>
-                <td>8:00 AM – 5:00 PM</td>
-              </tr>
-              <tr id="row-friday">
-                <td>Friday</td>
-                <td>8:00 AM – 5:00 PM</td>
-              </tr>
-              <tr id="row-saturday">
-                <td>Saturday</td>
-                <td>9:00 AM – 5:00 PM</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Hours -->
+        <div class="reveal">
+          <p class="hours-label">Business Hours</p>
+          <div class="hours-list" role="list">
+            <div class="hours-row closed" id="row-sunday" role="listitem">
+              <span class="day">Sunday</span>
+              <span class="time">Closed</span>
+            </div>
+            <div class="hours-row" id="row-monday" role="listitem">
+              <span class="day">Monday</span>
+              <span class="time">8:00 AM – 5:00 PM</span>
+            </div>
+            <div class="hours-row" id="row-tuesday" role="listitem">
+              <span class="day">Tuesday</span>
+              <span class="time">8:00 AM – 5:00 PM</span>
+            </div>
+            <div class="hours-row" id="row-wednesday" role="listitem">
+              <span class="day">Wednesday</span>
+              <span class="time">8:00 AM – 5:00 PM</span>
+            </div>
+            <div class="hours-row" id="row-thursday" role="listitem">
+              <span class="day">Thursday</span>
+              <span class="time">8:00 AM – 5:00 PM</span>
+            </div>
+            <div class="hours-row" id="row-friday" role="listitem">
+              <span class="day">Friday</span>
+              <span class="time">8:00 AM – 5:00 PM</span>
+            </div>
+            <div class="hours-row" id="row-saturday" role="listitem">
+              <span class="day">Saturday</span>
+              <span class="time">9:00 AM – 5:00 PM</span>
+            </div>
+          </div>
+        </div>
 
-          <div class="contact-info-block" style="margin-top:2.5rem;">
+        <!-- Contact details + map -->
+        <div class="reveal reveal-delay-2">
+          <div class="contact-details">
 
-            <div class="contact-item reveal">
-              <div class="ci-icon">📍</div>
-              <div class="ci-text">
-                <div class="label">Address</div>
-                <div class="value">
-                  <a href="https://maps.google.com/?q=1946+NW+33rd+Ave+Gainesville+FL+32605" target="_blank" rel="noopener">
-                    1946 NW 33rd Ave<br>Gainesville, FL 32605
-                  </a>
-                </div>
+            <div class="contact-block">
+              <p class="cb-label">Phone</p>
+              <div class="cb-value">
+                <a href="tel:+13528726459">(352) 872-6459</a>
               </div>
             </div>
 
-            <div class="contact-item reveal">
-              <div class="ci-icon">📞</div>
-              <div class="ci-text">
-                <div class="label">Phone</div>
-                <div class="value">
-                  <a href="tel:+13528726459">(352) 872-6459</a>
-                </div>
+            <div class="contact-block">
+              <p class="cb-label">Address</p>
+              <div class="cb-value">
+                1946 NW 33rd Ave<br>Gainesville, FL 32605
               </div>
+              <a
+                class="map-link"
+                href="https://maps.google.com/?q=1946+NW+33rd+Ave+Gainesville+FL+32605"
+                target="_blank"
+                rel="noopener">
+                Get directions
+              </a>
             </div>
 
-            <div class="contact-item reveal">
-              <div class="ci-icon">🕐</div>
-              <div class="ci-text">
-                <div class="label">Availability</div>
-                <div class="value">Mon–Fri: 8 AM–5 PM &nbsp;|&nbsp; Sat: 9 AM–5 PM</div>
+            <div class="contact-block">
+              <p class="cb-label">Hours</p>
+              <div class="cb-value" style="font-size:1.15rem;">
+                Mon–Fri: 8 AM – 5 PM<br>Saturday: 9 AM – 5 PM
               </div>
             </div>
 
           </div>
-        </div>
 
-        <!-- Right: Map -->
-        <div class="reveal">
-          <h3 style="color:var(--navy);margin-bottom:1.25rem;">Our Location</h3>
-          <div class="map-wrapper">
+          <div class="map-embed">
             <iframe
-              title="Dustbunny's LLC map location"
+              title="Dustbunny's LLC location map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3470.2!2d-82.3760!3d29.6650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a3b0f1c2d5e7%3A0x1234567890abcdef!2s1946+NW+33rd+Ave%2C+Gainesville%2C+FL+32605!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
               loading="lazy"
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-          </div>
-          <div style="margin-top:1.5rem;">
-            <a
-              href="https://maps.google.com/?q=1946+NW+33rd+Ave+Gainesville+FL+32605"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-outline"
-              style="width:100%;justify-content:center;">
-              📍 Get Directions
-            </a>
           </div>
         </div>
 
@@ -311,16 +299,16 @@
   </section>
 
   <!-- ── Footer ── -->
-  <footer>
+  <footer role="contentinfo">
     <div class="container">
-      <div class="footer-inner">
+      <div class="footer-top">
 
         <div class="footer-brand">
-          <a href="#hero" class="nav-logo">
-            <div class="logo-icon">🧹</div>
+          <a href="#hero" class="nav-logo" aria-label="Dustbunny's LLC home">
+            <div class="logo-mark" aria-hidden="true">🧹</div>
             Dustbunny's LLC
           </a>
-          <p>Professional house cleaning services in Gainesville, FL. Locally owned, detail-driven, and dedicated to your satisfaction.</p>
+          <p>Professional house cleaning in Gainesville, FL. Locally owned, detail-driven, and committed to your satisfaction.</p>
         </div>
 
         <div class="footer-col">
@@ -337,7 +325,13 @@
           <h4>Contact</h4>
           <ul>
             <li><a href="tel:+13528726459">(352) 872-6459</a></li>
-            <li><a href="https://maps.google.com/?q=1946+NW+33rd+Ave+Gainesville+FL+32605" target="_blank" rel="noopener">1946 NW 33rd Ave<br>Gainesville, FL 32605</a></li>
+            <li>
+              <a href="https://maps.google.com/?q=1946+NW+33rd+Ave+Gainesville+FL+32605" target="_blank" rel="noopener">
+                1946 NW 33rd Ave<br>Gainesville, FL 32605
+              </a>
+            </li>
+            <li>Mon–Fri: 8 AM – 5 PM</li>
+            <li>Saturday: 9 AM – 5 PM</li>
           </ul>
         </div>
 
@@ -351,6 +345,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
