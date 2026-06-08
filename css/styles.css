@@ -1,20 +1,20 @@
 /* ── Variables ── */
 :root {
-  /* warm blush-gray neutrals */
-  --cream:       #f8f3f4;
-  --cream-dark:  #f1e8ec;
-  --cream-mid:   #e6d6dd;
-  --white:       #fffcfd;
-  /* dusty mauve brand — deep mauve as the main structural color */
-  --plum:        #5e3a4d;
-  --plum-mid:    #7a4d62;
-  --rose:        #c98aa3;
-  --rose-light:  #ecd4dd;
-  /* dusty rose accent */
-  --pink:        #b96f8f;
-  --pink-light:  #f0dde4;
-  --muted:       #73585f;
-  --dark:        #241a1f;
+  /* warm off-white neutrals */
+  --cream:       #f5f3f0;
+  --cream-dark:  #ece8e1;
+  --cream-mid:   #ddd7cc;
+  --white:       #fffefb;
+  /* charcoal brand — deep charcoal as the main structural color */
+  --plum:        #2b2b30;
+  --plum-mid:    #41414a;
+  --rose:        #cf9a3f;
+  --rose-light:  #ecd9b3;
+  /* amber-gold accent */
+  --pink:        #c08a22;
+  --pink-light:  #f4e8cd;
+  --muted:       #5c5a55;
+  --dark:        #221f1c;
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'DM Sans', system-ui, sans-serif;
@@ -101,9 +101,9 @@ p { color: var(--muted); }
 .btn-terra {
   background: var(--pink);
   color: #fff;
-  box-shadow: 0 4px 18px rgba(185,111,143,.35);
+  box-shadow: 0 4px 18px rgba(192,138,34,.35);
 }
-.btn-terra:hover { background: #a25c79; box-shadow: 0 8px 28px rgba(185,111,143,.4); }
+.btn-terra:hover { background: #9e6f17; box-shadow: 0 8px 28px rgba(192,138,34,.4); }
 
 .btn-ghost {
   background: transparent;
@@ -156,7 +156,7 @@ p { color: var(--muted); }
   transition: background .35s ease, box-shadow .35s ease;
 }
 #navbar.scrolled {
-  background: rgba(248,243,244,.96);
+  background: rgba(245,243,240,.96);
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--cream-mid);
 }
@@ -310,7 +310,7 @@ p { color: var(--muted); }
   position: relative;
   overflow: hidden;
   isolation: isolate; /* contain .arch-overlay z-index so badges stay on top */
-  box-shadow: 0 30px 60px -18px rgba(94,58,77,.45);
+  box-shadow: 0 30px 60px -18px rgba(43,43,48,.45);
 }
 .arch img {
   position: absolute;
@@ -329,9 +329,9 @@ p { color: var(--muted); }
   justify-content: flex-end;
   padding: 1.9rem 1.75rem;
   background: linear-gradient(to top,
-    rgba(94,58,77,.82) 0%,
-    rgba(94,58,77,.32) 38%,
-    rgba(94,58,77,0) 68%);
+    rgba(43,43,48,.82) 0%,
+    rgba(43,43,48,.32) 38%,
+    rgba(43,43,48,0) 68%);
 }
 .arch-tagline {
   font-family: var(--font-display);
@@ -360,7 +360,7 @@ p { color: var(--muted); }
   border: 1px solid rgba(0,0,0,.05);
   border-radius: 14px;
   padding: .85rem 1.1rem;
-  box-shadow: 0 14px 36px -8px rgba(94,58,77,.28);
+  box-shadow: 0 14px 36px -8px rgba(43,43,48,.28);
   font-size: .82rem;
   font-weight: 500;
   color: var(--dark);
@@ -426,7 +426,7 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
   aspect-ratio: 5 / 4;
   /* arched top echoes the hero arch motif */
   border-radius: 160px 160px var(--radius-lg) var(--radius-lg);
-  box-shadow: 0 26px 55px -22px rgba(94,58,77,.5);
+  box-shadow: 0 26px 55px -22px rgba(43,43,48,.5);
 }
 .sf-media img {
   width: 100%;
@@ -483,7 +483,7 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
   top: -120px; right: -80px;
   width: 480px; height: 480px;
   border-radius: 50%;
-  background: rgba(201,138,163,.1);
+  background: rgba(207,154,63,.1);
   pointer-events: none;
 }
 #why::after {
