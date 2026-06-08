@@ -1,20 +1,20 @@
 /* ── Variables ── */
 :root {
-  /* blush neutrals */
-  --cream:       #fdf1f4;
-  --cream-dark:  #fbe4ea;
-  --cream-mid:   #f4d2dc;
-  --white:       #fffafb;
-  /* pink-forward brand — deep raspberry as the main structural color */
-  --plum:        #8e1f50;
-  --plum-mid:    #a83264;
-  --rose:        #e986a8;
-  --rose-light:  #f8d4e1;
-  /* vibrant accent */
-  --pink:        #e0457a;
-  --pink-light:  #fcd7e3;
-  --muted:       #7d5763;
-  --dark:        #2a1a20;
+  /* warm blush-gray neutrals */
+  --cream:       #f8f3f4;
+  --cream-dark:  #f1e8ec;
+  --cream-mid:   #e6d6dd;
+  --white:       #fffcfd;
+  /* dusty mauve brand — deep mauve as the main structural color */
+  --plum:        #5e3a4d;
+  --plum-mid:    #7a4d62;
+  --rose:        #c98aa3;
+  --rose-light:  #ecd4dd;
+  /* dusty rose accent */
+  --pink:        #b96f8f;
+  --pink-light:  #f0dde4;
+  --muted:       #73585f;
+  --dark:        #241a1f;
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'DM Sans', system-ui, sans-serif;
@@ -101,9 +101,9 @@ p { color: var(--muted); }
 .btn-terra {
   background: var(--pink);
   color: #fff;
-  box-shadow: 0 4px 18px rgba(224,69,122,.35);
+  box-shadow: 0 4px 18px rgba(185,111,143,.35);
 }
-.btn-terra:hover { background: #c8345f; box-shadow: 0 8px 28px rgba(224,69,122,.4); }
+.btn-terra:hover { background: #a25c79; box-shadow: 0 8px 28px rgba(185,111,143,.4); }
 
 .btn-ghost {
   background: transparent;
@@ -156,7 +156,7 @@ p { color: var(--muted); }
   transition: background .35s ease, box-shadow .35s ease;
 }
 #navbar.scrolled {
-  background: rgba(253,241,244,.96);
+  background: rgba(248,243,244,.96);
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--cream-mid);
 }
@@ -310,7 +310,7 @@ p { color: var(--muted); }
   position: relative;
   overflow: hidden;
   isolation: isolate; /* contain .arch-overlay z-index so badges stay on top */
-  box-shadow: 0 30px 60px -18px rgba(142,31,80,.45);
+  box-shadow: 0 30px 60px -18px rgba(94,58,77,.45);
 }
 .arch img {
   position: absolute;
@@ -329,9 +329,9 @@ p { color: var(--muted); }
   justify-content: flex-end;
   padding: 1.9rem 1.75rem;
   background: linear-gradient(to top,
-    rgba(142,31,80,.82) 0%,
-    rgba(142,31,80,.32) 38%,
-    rgba(142,31,80,0) 68%);
+    rgba(94,58,77,.82) 0%,
+    rgba(94,58,77,.32) 38%,
+    rgba(94,58,77,0) 68%);
 }
 .arch-tagline {
   font-family: var(--font-display);
@@ -360,7 +360,7 @@ p { color: var(--muted); }
   border: 1px solid rgba(0,0,0,.05);
   border-radius: 14px;
   padding: .85rem 1.1rem;
-  box-shadow: 0 14px 36px -8px rgba(142,31,80,.28);
+  box-shadow: 0 14px 36px -8px rgba(94,58,77,.28);
   font-size: .82rem;
   font-weight: 500;
   color: var(--dark);
@@ -426,7 +426,7 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
   aspect-ratio: 5 / 4;
   /* arched top echoes the hero arch motif */
   border-radius: 160px 160px var(--radius-lg) var(--radius-lg);
-  box-shadow: 0 26px 55px -22px rgba(142,31,80,.5);
+  box-shadow: 0 26px 55px -22px rgba(94,58,77,.5);
 }
 .sf-media img {
   width: 100%;
@@ -483,7 +483,7 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
   top: -120px; right: -80px;
   width: 480px; height: 480px;
   border-radius: 50%;
-  background: rgba(233,134,168,.1);
+  background: rgba(201,138,163,.1);
   pointer-events: none;
 }
 #why::after {
@@ -561,8 +561,8 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 
 /* ── CTA Strip ── */
 #cta-strip {
-  background: var(--pink);
-  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--pink) 0%, var(--plum) 100%);
+  padding: clamp(6rem, 13vw, 10rem) 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -570,24 +570,31 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 #cta-strip::before {
   content: '';
   position: absolute;
-  top: -80px; left: 50%;
+  top: -160px; left: 50%;
   transform: translateX(-50%);
-  width: 600px; height: 600px;
+  width: 820px; height: 820px;
   border-radius: 50%;
-  background: rgba(255,255,255,.06);
+  background: rgba(255,255,255,.07);
   pointer-events: none;
 }
 .cta-strip-inner { position: relative; z-index: 1; }
 .cta-strip-inner h2 {
   color: var(--white);
-  margin-bottom: .85rem;
+  font-size: clamp(2.8rem, 6.5vw, 5.2rem);
+  line-height: 1.04;
+  margin-bottom: 1.2rem;
 }
 .cta-strip-inner p {
-  color: rgba(255,255,255,.75);
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+  color: rgba(255,255,255,.85);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  max-width: 540px;
+  margin: 0 auto 2.75rem;
 }
-.cta-strip-inner .btn-white { padding: 1rem 2.5rem; font-size: 1rem; }
+.cta-strip-inner .btn-white {
+  padding: 1.25rem 3.4rem;
+  font-size: 1.12rem;
+  box-shadow: 0 14px 40px -8px rgba(36,26,31,.4);
+}
 
 /* ── Hours & Contact ── */
 #contact { background: var(--cream); }
@@ -664,8 +671,61 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; }
 }
 .map-embed iframe { display: block; width: 100%; height: 260px; border: none; }
 
+.cb-cta { margin-top: 1.75rem; }
+
+/* ── Service area ── */
+.service-area {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: clamp(3rem, 6vw, 4.5rem);
+  border-top: 1px solid var(--cream-mid);
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.area-text .label-tag { margin-bottom: 1rem; }
+.area-text h3 {
+  font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+  color: var(--plum);
+  line-height: 1.12;
+  margin-bottom: .9rem;
+}
+.area-text > p {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  max-width: 46ch;
+  margin-bottom: 1.75rem;
+}
+.area-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+}
+.area-tags li {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--plum);
+  background: var(--white);
+  border: 1px solid var(--cream-mid);
+  border-radius: var(--radius-pill);
+  padding: .5rem 1rem;
+}
+.area-tags li::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--pink);
+}
+.area-map { margin-top: 0; }
+.area-map iframe { height: clamp(320px, 38vw, 440px); }
+
 @media (max-width: 768px) {
   .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .service-area { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 
 /* ── Footer ── */
