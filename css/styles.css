@@ -305,45 +305,39 @@ p { color: var(--muted); }
   border-radius: 200px 200px 40px 40px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -18px rgba(30,58,47,.45);
+}
+.arch img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: arch-zoom 16s ease-in-out infinite alternate;
+}
+.arch-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  overflow: hidden;
-}
-.arch::before {
-  content: '';
-  position: absolute;
-  top: -60px; left: -60px;
-  width: 240px; height: 240px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.04);
-}
-.arch::after {
-  content: '';
-  position: absolute;
-  bottom: -80px; right: -60px;
-  width: 200px; height: 200px;
-  border-radius: 50%;
-  background: rgba(143,181,161,.15);
-}
-.arch-icon {
-  font-size: 4rem;
-  position: relative;
-  z-index: 1;
-  animation: float-arch 4s ease-in-out infinite;
+  justify-content: flex-end;
+  padding: 1.9rem 1.75rem;
+  background: linear-gradient(to top,
+    rgba(30,58,47,.82) 0%,
+    rgba(30,58,47,.32) 38%,
+    rgba(30,58,47,0) 68%);
 }
 .arch-tagline {
   font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-style: italic;
-  color: rgba(255,255,255,.7);
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 0 1.5rem;
+  font-size: 1.55rem;
+  line-height: 1.15;
+  font-weight: 600;
+  color: var(--white);
 }
+.arch-tagline em { font-style: italic; color: var(--sage-light); }
+@keyframes arch-zoom { from { transform: scale(1); } to { transform: scale(1.08); } }
 .arch-ring {
   position: absolute;
   border-radius: 50%;
@@ -453,6 +447,71 @@ section { padding: 6rem 0; }
   .svc-desc { grid-column: 1 / -1; padding-top: 0; }
 }
 
+/* ── Gallery / Our Work ── */
+#gallery { background: var(--cream); }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 215px;
+  gap: 1rem;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  grid-column: span 2;
+  margin: 0;
+  isolation: isolate;
+}
+.gallery-item.g-feature { grid-column: span 2; grid-row: span 2; }
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .8s var(--ease-out-expo);
+}
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26,25,23,.55) 0%, rgba(26,25,23,0) 45%);
+  opacity: .85;
+  transition: opacity .3s ease;
+}
+.gallery-item:hover img { transform: scale(1.07); }
+.gallery-item:hover::after { opacity: 1; }
+.gallery-item figcaption {
+  position: absolute;
+  left: 0; bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: baseline;
+  gap: .6rem;
+  padding: 1.1rem 1.3rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.gallery-item .cap-tag {
+  font-size: .72rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: .1em;
+  color: var(--sage-light);
+  opacity: .85;
+}
+
+@media (max-width: 760px) {
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 180px; }
+  .gallery-item, .gallery-item.g-feature { grid-column: span 1; grid-row: span 1; }
+  .gallery-item.g-feature { grid-column: span 2; }
+}
+@media (max-width: 460px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-item.g-feature { grid-column: span 1; }
+}
+
 /* ── Why Us ── */
 #why {
   background: var(--forest);
@@ -490,6 +549,27 @@ section { padding: 6rem 0; }
 .why-left h2 em { font-style: italic; color: var(--sage); }
 .why-left > p { color: rgba(255,255,255,.55); font-size: 1.05rem; margin-bottom: 2rem; }
 .why-cta .btn-terra { margin-top: .5rem; }
+
+.why-photo {
+  margin: 2.5rem 0 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255,255,255,.12);
+}
+.why-photo::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 64px; height: 4px;
+  background: var(--terra);
+}
+.why-photo img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
 
 .why-grid {
   display: grid;
