@@ -297,11 +297,11 @@ p { color: var(--muted); }
 }
 .arch-wrap {
   position: relative;
-  width: 340px;
+  width: 420px;
 }
 .arch {
-  width: 300px;
-  height: 420px;
+  width: 380px;
+  height: 530px;
   background: var(--forest);
   border-radius: 200px 200px 40px 40px;
   margin: 0 auto;
@@ -348,8 +348,8 @@ p { color: var(--muted); }
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
-.arch-ring-1 { width: 360px; height: 360px; }
-.arch-ring-2 { width: 430px; height: 430px; opacity: .12; }
+.arch-ring-1 { width: 450px; height: 450px; }
+.arch-ring-2 { width: 540px; height: 540px; opacity: .12; }
 
 .arch-badge {
   position: absolute;
@@ -395,11 +395,11 @@ p { color: var(--muted); }
   .container { padding: 0 1.25rem; }
   h1 { font-size: clamp(2.7rem, 11.5vw, 3.6rem); }
   h2 { font-size: clamp(2rem, 7.5vw, 2.6rem); }
-  .arch-wrap { width: 250px; }
-  .arch { width: 250px; height: 350px; }
-  .arch-tagline { font-size: 1.3rem; }
-  .arch-ring-1 { width: 290px; height: 290px; }
-  .arch-ring-2 { width: 350px; height: 350px; }
+  .arch-wrap { width: 300px; }
+  .arch { width: 290px; height: 405px; }
+  .arch-tagline { font-size: 1.35rem; }
+  .arch-ring-1 { width: 340px; height: 340px; }
+  .arch-ring-2 { width: 410px; height: 410px; }
   .arch-badge { font-size: .76rem; padding: .7rem .9rem; }
   .badge-top    { top: 5%;  left: 0; }
   .badge-bottom { top: 46%; right: 0; }
